@@ -1,0 +1,74 @@
+@font-face {font-family: "FuturisLightC";src: local('☺'),             /* IE trick */url('../images/FUTURILC.TTF') format('truetype'), /* Opera, Safari */url('../images/FUTURILC.svg#font') format('svg'); /* iOS */}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-family: "FuturisLightC", Helvetica, Geneva, sans-serif;
+}
+
+button {
+    border-radius: 50%;
+    border: none;
+    flex: 1 1 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.display {
+    height: 100px;
+    flex: 1 1 250px;
+    color: white;
+    text-align: right;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.nolik {
+    flex-grow: 10;
+    border-radius: 30px;
+}
+
+.clear, .znak, .procent {
+    background-color: rgb(136, 136, 136);
+    color: black;
+}
+
+.yellow, .result {
+    background-color: orange;
+    color: white;
+}
+
+.yellow:active{
+    background-color: white;
+    color: black;
+}
+
+.operand, .tochka {
+    background-color: rgb(83, 83, 83);
+    color: white;
+}
+
+
+#container {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 250px;
+    gap: 5px;
+}
+
+button:active {
+    background-color: rgb(188, 188, 188);
+}
