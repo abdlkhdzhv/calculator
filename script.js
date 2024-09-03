@@ -52,12 +52,10 @@ operator.forEach(op => {
     op.addEventListener('click', (event) => {
         if (num1 && !sign) {
             sign = event.target.textContent;
-            display.textContent = sign;
         } else if (num1 && sign && num2) {
             num1 = operate(parseFloat(num1), sign, parseFloat(num2));
             sign = event.target.textContent;
             num2 = '';
-            display.textContent = sign;
         }
     });
 });

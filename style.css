@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-size: 24px;
+    font-size: 34px;
 }
 
 body {
@@ -17,24 +17,24 @@ body {
 button {
     border-radius: 50%;
     border: none;
-    flex: 1 1 50px;
-    height: 50px;
+    flex: 1 1 70px;
+    height: 70px;
     cursor: pointer;
 }
 
 .display {
     height: 100px;
-    flex: 1 1 250px;
+    flex: 1 1 350px;
     color: white;
     text-align: right;
-    font-size: 40px;
+    font-size: 80px;
     display: flex;
     flex-direction: column-reverse;
 }
 
 .nolik {
     flex-grow: 10;
-    border-radius: 30px;
+    border-radius: 60px;
 }
 
 .clear, .znak, .procent {
@@ -45,9 +45,10 @@ button {
 .yellow, .result {
     background-color: orange;
     color: white;
+    transition: all 0.3s;
 }
 
-.yellow:active{
+.yellow:focus{
     background-color: white;
     color: black;
 }
@@ -65,8 +66,9 @@ button {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 250px;
-    gap: 5px;
+    width: 350px;
+    gap: 7px;
+    padding: 10px;
 }
 
 button:active {
